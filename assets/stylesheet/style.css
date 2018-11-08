@@ -33,7 +33,7 @@ ul li a:hover {
 
 .content {
   display: grid;
-  grid-template-columns:
+  grid-template-columns: 
   grid-template-rows:
   max-width: 960px;
   margin: 0 auto;
