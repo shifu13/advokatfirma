@@ -7,11 +7,38 @@ body {
   width: 100%;
 }
 
+/* Selve Hero begynder her */
+
 .header-container {
   background: url(../img/header.jpg);
   height: 100vh;
   width: 100%;
   background-size: cover;
+  background-position: center;
+  background-reapeat: no-reapeat;
+  position: relative;
+}
+
+.header-inner {
+
+}
+
+/* Her begynder navigationen */
+
+nav {
+
+}
+
+nav ul {
+
+}
+
+nav ul li {
+
+}
+
+nav ul li a {
+  text-decoration: none;
 }
 
 /* Begynder på grid area */
@@ -23,9 +50,9 @@ body {
   max-width: 960px;
   margin: 0 auto;
   grid-template-areas:
-  "section1 section1 section1 section1"
-  "section2 section2 section2 section2"
-  "section3 section3 section3 section3";
+  "section1 section1 section1 section1 section1 section1 section1 section1 section1 section1 section1 section1"
+  "section2 section2 section2 section2 section2 section2 section2 section2 section2 section2 section2 section2"
+  "section3 section3 section3 section3 section3 section3 section3 section3 section3 section3 section3 section3";
 }
 
 .section1 {
@@ -40,10 +67,28 @@ body {
   grid-area: section3;
 }
 
-.footer-firma {
+/* Footer */
 
+footer {
+  display: grid;
+  grid-template-columns: repeat(12,1fr);
+  grid-template-rows: (4,minmax(100px, auto));
+  margin: 0 auto;
+  width: 100%;
+  grid-template-areas:
+  "firma firma firma firma firma firma firma firma firma firma firma firma"
+  "kontakt kontakt kontakt kontakt kontakt kontakt kontakt kontakt kontakt kontakt kontakt kontakt"
+   "some some some some some some some some some some some some";
+}
+
+.footer-firma {
+  grid-area: firma;
 }
 
 .footer-kontakt {
+  grid-area: kontakt;
+}
 
+.footer-social {
+  grid-area: some;
 }
